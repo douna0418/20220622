@@ -24,12 +24,12 @@
         } */
         .offer_gift ,.swiper{
             position: relative;
-            bottom: 10%;
+            top: 9.5%;
             left: 50%;
             transform: translateX(-50%);
             right: 16%;
-            max-width: 850px;
-            margin-top: 5%;
+            max-width: 696px;
+            margin-bottom: 11.43%;
         }
         .swiper .word {
             position: absolute;
@@ -39,69 +39,81 @@
             display: flex;
         }
         .imgMain{
-            width: 50%;
+            width: 48%;
+            padding-left: 1.5%;
         }
         .word img{
             width: 100%;
         }
         .word p{
             display: block;
-            margin-left: 10%;
+            margin-left: 19%;
+        }
+        .container{
+            background-image: url('./image/bg3.jpg');
+            background-size: contain;
+            /* background-position: fixed; */
+            background-repeat: no-repeat;
+            width: 80%;
+            margin: 0 auto;
+            height: 643px;
         }
     </style>
-    <div class="swiper">
-        <section class="slider-for">
-            <div id="word_1" class="word">
-                <div class='imgMain'>
-                    <img src = "./image/04.jpg">
+    <div class = container>
+        <div class="swiper">
+            <section class="slider-for">
+                <div id="word_1" class="word">
+                    <div class='imgMain'>
+                        <img src = "./image/04.jpg">
+                    </div>
+                    <p>img1111111111</p>
                 </div>
-                <p>img1111111111</p>
-            </div>
-            <div id="word_2" class="word">
-                <div class='imgMain'>
-                    <img src = "./image/03.jpg">
+                <div id="word_2" class="word">
+                    <div class='imgMain'>
+                        <img src = "./image/03.jpg">
+                    </div>
+                    <p>img2222222222</p>
                 </div>
-                <p>img2222222222</p>
-            </div>
-            <div id="word_3" class="word">
-                <div class='imgMain'>
-                    <img src = "./image/02.jpg">
+                <div id="word_3" class="word">
+                    <div class='imgMain'>
+                        <img src = "./image/02.jpg">
+                    </div>
+                    <p>img3333333333</p>
                 </div>
-                <p>img3333333333</p>
-            </div>
-            <div id="word_4" class="word">
-                <div class='imgMain'>
-                    <img src = "./image/04.jpg">
+                <div id="word_4" class="word">
+                    <div class='imgMain'>
+                        <img src = "./image/04.jpg">
+                    </div>
+                    <p>img4444444444</p>
                 </div>
-                <p>img4444444444</p>
-            </div>
-            <div id="word_5" class="word">
-                <div class='imgMain'>
-                    <img src = "./image/03.jpg">
+                <div id="word_5" class="word">
+                    <div class='imgMain'>
+                        <img src = "./image/03.jpg">
+                    </div>
+                    <p>img5555555555</p>
                 </div>
-                <p>img5555555555</p>
-            </div>
-            <div id="word_6" class="word">
-                <div class='imgMain'>
-                    <img src = "./image/02.jpg">
+                <div id="word_6" class="word">
+                    <div class='imgMain'>
+                        <img src = "./image/02.jpg">
+                    </div>
+                    <p>img6666666666</p>
                 </div>
-                <p>img6666666666</p>
-            </div>
-        </section>
-    </div>    
-        
-    <div class="swiper_wrap"> 
-        <!-- <img src="" > -->
-        <div class="offer_gift">
-            <section class="slider-nav">
-            <img src="./image/04.jpg">
-            <img src="./image/03.jpg">
-            <img src="./image/02.jpg">
-            <img src="./image/04.jpg">
-            <img src="./image/03.jpg">
-            <img src="./image/02.jpg">
-            <!-- <img src="./image/01.jpg"> -->
             </section>
+        </div>    
+            
+        <div class="swiper_wrap"> 
+            <!-- <img src="" > -->
+            <div class="offer_gift">
+                <section class="slider-nav">
+                <img src="./image/04.jpg">
+                <img src="./image/03.jpg">
+                <img src="./image/02.jpg">
+                <img src="./image/04.jpg">
+                <img src="./image/03.jpg">
+                <img src="./image/02.jpg">
+                <!-- <img src="./image/01.jpg"> -->
+                </section>
+            </div>
         </div>
     </div>
 
@@ -148,6 +160,8 @@
                 asNavFor: '.slider-nav'
             });
             $('.slider-nav').slick({
+                centerMode: true,
+                centerPadding: '60px',
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 asNavFor: '.slider-for',
